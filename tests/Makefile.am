@@ -18,5 +18,6 @@ noinst_PROGRAMS = \
 	unit-test-client
 
 unit_test_server_SOURCES = unit-test-server.c
+unit_test_server_LDADD = -lmodbus -lglib-2.0 -lgobject-2.0
 unit_test_client_SOURCES = unit-test-client.c
-
+unit_test_client_LDADD = -lmodbus -lglib-2.0 -lgobject-2.0 
