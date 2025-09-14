@@ -28,7 +28,7 @@ mbcollect_SOURCES = \
 	output.c \
 	collect.c
 
-mbcollect_LDADD = $(GLIB_LIBS) -lmodbus
+mbcollect_LDADD = -lglib-2.0 -lgobject-2.0 -lmodbus
 
 mbrecorder_SOURCES = \
 	recorder.c
